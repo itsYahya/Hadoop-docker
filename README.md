@@ -35,27 +35,27 @@ To run the docker container, these are the steps.
 
 - At first you need to clone this Repo
 
-    Use your way to do so.
+        Use your way to do so.
 
 - Start a terminal interface
 
 - Step to path of this folder in your machine.
 
-    cd hadoop-docker-path
+        cd hadoop-docker-path
 
 - Run this command to create and run the Container.
 
-    docker-compose up  hadoop --build -d
+        docker-compose up  hadoop --build -d
 
 - To check if the container has been created correctly use the following command.
 
-    docker ps
+        docker ps
 
 Look for a container named hadoop, if you can see it than the setup is fine.
 
 - Now we need to jumtinto the virtual machine, the next command helps us with that.
 
-    docker exec -it hadoop /bin/bash
+        docker exec -it hadoop /bin/bash
 
 congrats you're now within the hadoop virtual machine.
 
