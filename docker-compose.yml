@@ -1,0 +1,14 @@
+version: '3'
+services:
+  hadoop:
+    image: hadoop
+    build: ./hadoop
+    container_name: hadoop
+    ports:
+      - "9870:9870"  # NameNode Web UI
+      - "8088:8088"  # ResourceManager UI
+      - "9000:9000"  # HDFS
+    environment:
+      - CLUSTER_NAME=single-node-cluster
+    volumes:
+      - "./hadoop/data:/data"
