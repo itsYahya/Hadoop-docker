@@ -9,10 +9,10 @@ Hadoop virtual environment
 
 # Commands to run
 
-    Format the nameNode : 
+Format the nameNode : 
 
     ``` $HADOOP_HOME/bin/hdfs namenode -format ```
 
-    start name node :
+start name node :
 
     ``` hdfs --daemon start ```
