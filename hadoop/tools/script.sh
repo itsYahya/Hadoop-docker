@@ -10,6 +10,6 @@ echo -e "deb http://archive.debian.org/debian stretch main\ndeb http://archive.d
 
 apt update -y && apt upgrade -y
 
-apt install python3 -y
+apt install python -y
 
 tail -f
